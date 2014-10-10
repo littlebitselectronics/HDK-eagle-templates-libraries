@@ -4870,6 +4870,8 @@ quarter-circle legs are 2  intervals apart</text>
 <part name="GND14" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$3" library="LITTLEBITS" deviceset="OSHWCREDIT" device=""/>
 <part name="FRAME1" library="LITTLEBITS" deviceset="FRAME-LETTER" device=""/>
+<part name="P+10" library="SparkFun" deviceset="VCC" device=""/>
+<part name="GND15" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4892,10 +4894,10 @@ quarter-circle legs are 2  intervals apart</text>
 </plain>
 <instances>
 <instance part="I32BSF1" gate="G$1" x="226.06" y="162.56"/>
-<instance part="I32BSM1" gate="G$1" x="12.7" y="139.7"/>
-<instance part="I32BSM2" gate="G$1" x="12.7" y="162.56"/>
-<instance part="P+2" gate="1" x="30.48" y="175.26"/>
-<instance part="GND2" gate="1" x="30.48" y="157.48"/>
+<instance part="I32BSM1" gate="G$1" x="17.78" y="165.1"/>
+<instance part="I32BSM2" gate="G$1" x="17.78" y="142.24"/>
+<instance part="P+2" gate="1" x="35.56" y="154.94"/>
+<instance part="GND2" gate="1" x="35.56" y="137.16"/>
 <instance part="U1" gate="G$1" x="53.34" y="78.74" smashed="yes">
 <attribute name="VALUE" x="43.18" y="60.96" size="1.778" layer="96"/>
 </instance>
@@ -4964,6 +4966,8 @@ quarter-circle legs are 2  intervals apart</text>
 <instance part="U$3" gate="G$1" x="30.48" y="10.16"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
+<instance part="P+10" gate="1" x="35.56" y="175.26"/>
+<instance part="GND15" gate="1" x="35.56" y="162.56"/>
 </instances>
 <busses>
 </busses>
@@ -4980,8 +4984,8 @@ quarter-circle legs are 2  intervals apart</text>
 </segment>
 <segment>
 <pinref part="P+2" gate="1" pin="VCC"/>
-<wire x1="25.4" y1="170.18" x2="30.48" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="170.18" x2="30.48" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="149.86" x2="35.56" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="149.86" x2="35.56" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="I32BSM2" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
@@ -5013,6 +5017,12 @@ quarter-circle legs are 2  intervals apart</text>
 <pinref part="U3" gate="G$1" pin="V+"/>
 <pinref part="P+9" gate="1" pin="VCC"/>
 </segment>
+<segment>
+<pinref part="I32BSM1" gate="G$1" pin="VCC"/>
+<pinref part="P+10" gate="1" pin="VCC"/>
+<wire x1="30.48" y1="172.72" x2="35.56" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="172.72" x2="35.56" y2="175.26" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -5030,8 +5040,8 @@ quarter-circle legs are 2  intervals apart</text>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="25.4" y1="165.1" x2="30.48" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="165.1" x2="30.48" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="144.78" x2="35.56" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="144.78" x2="35.56" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="I32BSM2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
@@ -5087,6 +5097,12 @@ quarter-circle legs are 2  intervals apart</text>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="20.32" y1="96.52" x2="20.32" y2="93.98" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="I32BSM1" gate="G$1" pin="GND"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="30.48" y1="167.64" x2="35.56" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="167.64" x2="35.56" y2="165.1" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VREF" class="0">
 <segment>
@@ -5113,44 +5129,6 @@ quarter-circle legs are 2  intervals apart</text>
 <junction x="60.96" y="78.74"/>
 </segment>
 </net>
-<net name="SIG_IN" class="0">
-<segment>
-<wire x1="25.4" y1="167.64" x2="30.48" y2="167.64" width="0.1524" layer="91"/>
-<label x="30.48" y="167.64" size="1.778" layer="95" xref="yes"/>
-<pinref part="I32BSM2" gate="G$1" pin="SIG"/>
-</segment>
-<segment>
-<label x="15.24" y="81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="30.48" y1="81.28" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="81.28" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="81.28" x2="30.48" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="I?R2" gate="G$1" pin="2"/>
-<pinref part="I?TVS1" gate="G$1" pin="C"/>
-<wire x1="30.48" y1="78.74" x2="30.48" y2="81.28" width="0.1524" layer="91"/>
-<junction x="30.48" y="81.28"/>
-<pinref part="I?R1" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="78.74" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
-<junction x="20.32" y="81.28"/>
-</segment>
-<segment>
-<wire x1="223.52" y1="167.64" x2="218.44" y2="167.64" width="0.1524" layer="91"/>
-<label x="218.44" y="167.64" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="I32BSF1" gate="G$1" pin="SIG"/>
-</segment>
-<segment>
-<label x="15.24" y="109.22" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="30.48" y1="109.22" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="109.22" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="109.22" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="I?R6" gate="G$1" pin="2"/>
-<pinref part="I?TVS3" gate="G$1" pin="C"/>
-<wire x1="30.48" y1="106.68" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
-<junction x="30.48" y="109.22"/>
-<pinref part="I?R5" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="106.68" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
-<junction x="20.32" y="109.22"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="+IN"/>
@@ -5175,6 +5153,11 @@ quarter-circle legs are 2  intervals apart</text>
 <wire x1="215.9" y1="106.68" x2="200.66" y2="106.68" width="0.1524" layer="91"/>
 <junction x="200.66" y="106.68"/>
 </segment>
+<segment>
+<wire x1="223.52" y1="167.64" x2="218.44" y2="167.64" width="0.1524" layer="91"/>
+<label x="218.44" y="167.64" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="I32BSF1" gate="G$1" pin="SIG"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -5198,6 +5181,46 @@ quarter-circle legs are 2  intervals apart</text>
 <pinref part="U3" gate="G$1" pin="+IN"/>
 <pinref part="I?R6" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="109.22" x2="45.72" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SIG1_IN" class="0">
+<segment>
+<label x="15.24" y="109.22" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="30.48" y1="109.22" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="109.22" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="109.22" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="I?R6" gate="G$1" pin="2"/>
+<pinref part="I?TVS3" gate="G$1" pin="C"/>
+<wire x1="30.48" y1="106.68" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
+<junction x="30.48" y="109.22"/>
+<pinref part="I?R5" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="106.68" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
+<junction x="20.32" y="109.22"/>
+</segment>
+<segment>
+<pinref part="I32BSM1" gate="G$1" pin="SIG"/>
+<wire x1="30.48" y1="170.18" x2="35.56" y2="170.18" width="0.1524" layer="91"/>
+<label x="35.56" y="170.18" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SIG2_IN" class="0">
+<segment>
+<label x="15.24" y="81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="30.48" y1="81.28" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="81.28" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="81.28" x2="30.48" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="I?R2" gate="G$1" pin="2"/>
+<pinref part="I?TVS1" gate="G$1" pin="C"/>
+<wire x1="30.48" y1="78.74" x2="30.48" y2="81.28" width="0.1524" layer="91"/>
+<junction x="30.48" y="81.28"/>
+<pinref part="I?R1" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="78.74" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
+<junction x="20.32" y="81.28"/>
+</segment>
+<segment>
+<wire x1="30.48" y1="147.32" x2="35.56" y2="147.32" width="0.1524" layer="91"/>
+<label x="35.56" y="147.32" size="1.778" layer="95" xref="yes"/>
+<pinref part="I32BSM2" gate="G$1" pin="SIG"/>
 </segment>
 </net>
 </nets>

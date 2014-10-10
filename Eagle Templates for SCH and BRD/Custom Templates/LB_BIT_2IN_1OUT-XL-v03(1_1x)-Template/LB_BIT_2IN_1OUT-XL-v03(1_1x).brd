@@ -3870,6 +3870,8 @@ design rules under a new name.</description>
 <contactref element="I?C3" pad="2"/>
 <contactref element="I?C4" pad="1"/>
 <contactref element="U3" pad="5"/>
+<contactref element="I32BSM1" pad="VCC1"/>
+<wire x1="14.2249" y1="37.99" x2="15.75" y2="43.625" width="0" layer="19" extent="16-16"/>
 <wire x1="12.105" y1="37.985" x2="14.2249" y2="37.99" width="0" layer="19" extent="16-16"/>
 <wire x1="17.63" y1="28.33" x2="14.2249" y2="37.99" width="0" layer="19" extent="16-16"/>
 <wire x1="17.565" y1="26.235" x2="17.63" y2="28.33" width="0" layer="19" extent="16-16"/>
@@ -3907,6 +3909,22 @@ design rules under a new name.</description>
 <contactref element="U3" pad="2"/>
 <contactref element="I?TVS3" pad="1"/>
 <contactref element="I?R5" pad="1"/>
+<contactref element="I32BSM1" pad="GND1"/>
+<wire x1="11.98" y1="39.735" x2="14.685" y2="41.075" width="0" layer="19" extent="16-16"/>
+<wire x1="12.105" y1="36.285" x2="11.98" y2="39.735" width="0" layer="19" extent="16-16"/>
+<wire x1="10.67" y1="43.625" x2="11.98" y2="39.735" width="0" layer="19" extent="16-16"/>
+<wire x1="16.8251" y1="37.04" x2="14.685" y2="41.075" width="0" layer="19" extent="16-16"/>
+<wire x1="17.69" y1="32.505" x2="16.8251" y2="37.04" width="0" layer="19" extent="16-16"/>
+<wire x1="17.62" y1="30.4" x2="17.69" y2="32.505" width="0" layer="19" extent="16-16"/>
+<wire x1="19.305" y1="26.64" x2="17.62" y2="30.4" width="0" layer="19" extent="16-16"/>
+<wire x1="21.035" y1="25.92" x2="19.305" y2="26.64" width="0" layer="19" extent="16-16"/>
+<wire x1="15.865" y1="26.235" x2="19.305" y2="26.64" width="0" layer="19" extent="16-16"/>
+<wire x1="23.81" y1="28.96" x2="21.035" y2="25.92" width="0" layer="19" extent="16-16"/>
+<wire x1="16.67" y1="21.7799" x2="15.865" y2="26.235" width="0" layer="19" extent="16-16"/>
+<wire x1="15.04" y1="7.525" x2="16.67" y2="21.7799" width="0" layer="19" extent="16-16"/>
+<wire x1="13.35" y1="6" x2="15.04" y2="7.525" width="0" layer="19" extent="16-16"/>
+<wire x1="10.5249" y1="8.38" x2="13.35" y2="6" width="0" layer="19" extent="16-16"/>
+<wire x1="10.67" y1="3.44" x2="13.35" y2="6" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="S$3">
 </signal>
@@ -3922,23 +3940,6 @@ design rules under a new name.</description>
 <contactref element="U1" pad="4"/>
 <wire x1="15.72" y1="21.7799" x2="15.72" y2="24.3801" width="0" layer="19" extent="16-16"/>
 </signal>
-<signal name="SIG_IN">
-<contactref element="I?R2" pad="2"/>
-<contactref element="I?TVS1" pad="2"/>
-<contactref element="I?R1" pad="2"/>
-<contactref element="I32BSF1" pad="SIG"/>
-<contactref element="I32BSM2" pad="SIG1"/>
-<contactref element="I?R6" pad="2"/>
-<contactref element="I?TVS3" pad="2"/>
-<contactref element="I?R5" pad="2"/>
-<wire x1="15.11" y1="39.725" x2="15.685" y2="41.075" width="0" layer="19" extent="16-16"/>
-<wire x1="13.68" y1="39.735" x2="15.11" y2="39.725" width="0" layer="19" extent="16-16"/>
-<wire x1="19.305" y1="24.94" x2="15.11" y2="39.725" width="0" layer="19" extent="16-16"/>
-<wire x1="19.345" y1="23.32" x2="19.305" y2="24.94" width="0" layer="19" extent="16-16"/>
-<wire x1="21.035" y1="24.92" x2="19.305" y2="24.94" width="0" layer="19" extent="16-16"/>
-<wire x1="23.81" y1="26.42" x2="21.035" y2="24.92" width="0" layer="19" extent="16-16"/>
-<wire x1="13.21" y1="3.44" x2="19.345" y2="23.32" width="0" layer="19" extent="16-16"/>
-</signal>
 <signal name="N$4">
 <contactref element="U1" pad="1"/>
 <contactref element="I?R2" pad="1"/>
@@ -3948,8 +3949,10 @@ design rules under a new name.</description>
 <contactref element="U2" pad="3"/>
 <contactref element="U2" pad="4"/>
 <contactref element="I?TVS2" pad="2"/>
+<contactref element="I32BSF1" pad="SIG"/>
 <wire x1="10.5249" y1="9.33" x2="13.1251" y2="9.33" width="0" layer="19" extent="16-16"/>
 <wire x1="12.35" y1="6" x2="13.1251" y2="9.33" width="0" layer="19" extent="16-16"/>
+<wire x1="13.21" y1="3.44" x2="12.35" y2="6" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$3">
 <contactref element="U2" pad="1"/>
@@ -3963,6 +3966,24 @@ design rules under a new name.</description>
 <contactref element="U3" pad="1"/>
 <contactref element="I?R6" pad="1"/>
 <wire x1="16.8251" y1="37.99" x2="16.81" y2="39.725" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="SIG1_IN">
+<contactref element="I?R6" pad="2"/>
+<contactref element="I?TVS3" pad="2"/>
+<contactref element="I?R5" pad="2"/>
+<contactref element="I32BSM1" pad="SIG1"/>
+<wire x1="15.11" y1="39.725" x2="15.685" y2="41.075" width="0" layer="19" extent="16-16"/>
+<wire x1="13.68" y1="39.735" x2="15.11" y2="39.725" width="0" layer="19" extent="16-16"/>
+<wire x1="13.21" y1="43.625" x2="15.685" y2="41.075" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="SIG2_IN">
+<contactref element="I?R2" pad="2"/>
+<contactref element="I?TVS1" pad="2"/>
+<contactref element="I?R1" pad="2"/>
+<contactref element="I32BSM2" pad="SIG1"/>
+<wire x1="21.035" y1="24.92" x2="23.81" y2="26.42" width="0" layer="19" extent="16-16"/>
+<wire x1="19.305" y1="24.94" x2="21.035" y2="24.92" width="0" layer="19" extent="16-16"/>
+<wire x1="19.345" y1="23.32" x2="19.305" y2="24.94" width="0" layer="19" extent="16-16"/>
 </signal>
 </signals>
 </board>

@@ -3760,13 +3760,13 @@ design rules under a new name.</description>
 <attribute name="TOLERANCE" value="" x="-122.64" y="204.665" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VOLTAGE" value="" x="-122.64" y="204.665" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="U2" library="LITTLEBITS" package="SOT23-5" value="LV321SOT23-5" x="8.385" y="19.63" rot="MR0"/>
-<element name="I?TVS2" library="LITTLEBITS" package="SOD-923" value="ESD9B5.0ST5G" x="5.97" y="19.89" rot="MR270">
-<attribute name="LB_PN" value="?" x="-129.875" y="192.035" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="V_OPERATION" value="5V" x="-129.875" y="192.035" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="V_CLAMP" value="?" x="-129.875" y="192.035" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MPN" value="ESD9B5.0ST5G" x="5.97" y="19.89" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="IEC_ESD_PROT0" value="+/-18kV" x="5.97" y="19.89" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="U2" library="LITTLEBITS" package="SOT23-5" value="LV321SOT23-5" x="17.68" y="17.455" rot="MR180"/>
+<element name="I?TVS2" library="LITTLEBITS" package="SOD-923" value="ESD9B5.0ST5G" x="20.095" y="17.195" rot="MR90">
+<attribute name="LB_PN" value="?" x="155.94" y="-154.95" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="V_OPERATION" value="5V" x="155.94" y="-154.95" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="V_CLAMP" value="?" x="155.94" y="-154.95" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="ESD9B5.0ST5G" x="20.095" y="17.195" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="IEC_ESD_PROT0" value="+/-18kV" x="20.095" y="17.195" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="I?C2" library="LITTLEBITS" package="CAP-0603" value="10uF" x="6.72" y="36.5" rot="MR270">
 <attribute name="LB_PN" value="" x="24.455" y="216.62" size="1.778" layer="28" rot="MR270" display="off"/>
@@ -3774,39 +3774,39 @@ design rules under a new name.</description>
 <attribute name="TOLERANCE" value="" x="24.455" y="216.62" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VOLTAGE" value="" x="24.455" y="216.62" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="U1" library="LITTLEBITS" package="SOT23-5" value="LV321SOT23-5" x="18.31" y="21.09" rot="MR180"/>
-<element name="I?TVS1" library="LITTLEBITS" package="SOD-923" value="ESD9B5.0ST5G" x="20.545" y="20.4" rot="MR270">
-<attribute name="LB_PN" value="?" x="12.375" y="26.34" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="V_OPERATION" value="5V" x="12.375" y="26.34" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="V_CLAMP" value="?" x="12.375" y="26.34" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MPN" value="ESD9B5.0ST5G" x="20.545" y="20.4" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="IEC_ESD_PROT0" value="+/-18kV" x="20.545" y="20.4" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="U1" library="LITTLEBITS" package="SOT23-5" value="LV321SOT23-5" x="14.465" y="8.325" rot="MR270"/>
+<element name="I?TVS1" library="LITTLEBITS" package="SOD-923" value="ESD9B5.0ST5G" x="13.775" y="6.09" rot="MR0">
+<attribute name="LB_PN" value="?" x="19.715" y="14.26" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="V_OPERATION" value="5V" x="19.715" y="14.26" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="V_CLAMP" value="?" x="19.715" y="14.26" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="ESD9B5.0ST5G" x="13.775" y="6.09" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="IEC_ESD_PROT0" value="+/-18kV" x="13.775" y="6.09" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="U3" library="LITTLEBITS" package="SOT23-5" value="LV321SOT23-5" x="15.39" y="8.55" rot="MR270"/>
-<element name="I?TVS3" library="LITTLEBITS" package="SOD-923" value="ESD9B5.0ST5G" x="14.41" y="6.135" rot="MR0">
-<attribute name="LB_PN" value="?" x="20.35" y="14.305" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="V_OPERATION" value="5V" x="20.35" y="14.305" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="V_CLAMP" value="?" x="20.35" y="14.305" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MPN" value="ESD9B5.0ST5G" x="14.41" y="6.135" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="IEC_ESD_PROT0" value="+/-18kV" x="14.41" y="6.135" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="U3" library="LITTLEBITS" package="SOT23-5" value="LV321SOT23-5" x="8.445" y="15.815" rot="MR0"/>
+<element name="I?TVS3" library="LITTLEBITS" package="SOD-923" value="ESD9B5.0ST5G" x="6.03" y="16.795" rot="MR90">
+<attribute name="LB_PN" value="?" x="14.2" y="10.855" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="V_OPERATION" value="5V" x="14.2" y="10.855" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="V_CLAMP" value="?" x="14.2" y="10.855" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="ESD9B5.0ST5G" x="6.03" y="16.795" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="IEC_ESD_PROT0" value="+/-18kV" x="6.03" y="16.795" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="I?C3" library="LITTLEBITS" package="CAP-0603" value="1.0uF" x="12.375" y="8.4" rot="MR90">
-<attribute name="LB_PN" value="" x="12.375" y="8.4" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="COMPOSITION" value="" x="12.375" y="8.4" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="TOLERANCE" value="" x="12.375" y="8.4" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="VOLTAGE" value="" x="12.375" y="8.4" size="1.778" layer="28" rot="MR90" display="off"/>
+<element name="I?C3" library="LITTLEBITS" package="CAP-0603" value="1.0uF" x="8.295" y="18.83" rot="MR180">
+<attribute name="LB_PN" value="" x="8.295" y="18.83" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="COMPOSITION" value="" x="8.295" y="18.83" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="TOLERANCE" value="" x="8.295" y="18.83" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VOLTAGE" value="" x="8.295" y="18.83" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="I?C4" library="LITTLEBITS" package="CAP-0603" value="1.0uF" x="18.225" y="18.03" rot="MR0">
-<attribute name="LB_PN" value="" x="18.225" y="18.03" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="COMPOSITION" value="" x="18.225" y="18.03" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="TOLERANCE" value="" x="18.225" y="18.03" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VOLTAGE" value="" x="18.225" y="18.03" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="I?C4" library="LITTLEBITS" package="CAP-0603" value="1.0uF" x="11.405" y="8.41" rot="MR90">
+<attribute name="LB_PN" value="" x="11.405" y="8.41" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="COMPOSITION" value="" x="11.405" y="8.41" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="TOLERANCE" value="" x="11.405" y="8.41" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VOLTAGE" value="" x="11.405" y="8.41" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="I?C5" library="LITTLEBITS" package="CAP-0603" value="1.0uF" x="8.42" y="22.67" rot="MR180">
-<attribute name="LB_PN" value="" x="8.42" y="22.67" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="COMPOSITION" value="" x="8.42" y="22.67" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="TOLERANCE" value="" x="8.42" y="22.67" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VOLTAGE" value="" x="8.42" y="22.67" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="I?C5" library="LITTLEBITS" package="CAP-0603" value="1.0uF" x="17.645" y="14.415" rot="MR0">
+<attribute name="LB_PN" value="" x="17.645" y="14.415" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="COMPOSITION" value="" x="17.645" y="14.415" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="TOLERANCE" value="" x="17.645" y="14.415" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VOLTAGE" value="" x="17.645" y="14.415" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="U$1" library="LITTLEBITS" package="OSHWCREDIT" value="OSHWCREDIT" x="-92.37" y="-61.97"/>
 <element name="FRAME1" library="LITTLEBITS" package="FABDWG01-OHW" value="FRAME-LETTER" x="0" y="0"/>
@@ -3836,15 +3836,15 @@ design rules under a new name.</description>
 <wire x1="14.6199" y1="37.69" x2="15.75" y2="43.625" width="0" layer="19" extent="16-16"/>
 <wire x1="12.695" y1="37.255" x2="14.6199" y2="37.69" width="0" layer="19" extent="16-16"/>
 <wire x1="10.64" y1="37.255" x2="12.695" y2="37.255" width="0" layer="19" extent="16-16"/>
-<wire x1="9.27" y1="22.67" x2="10.64" y2="37.255" width="0" layer="19" extent="16-16"/>
-<wire x1="9.335" y1="20.9301" x2="9.27" y2="22.67" width="0" layer="19" extent="16-16"/>
-<wire x1="3.44" y1="17.275" x2="9.335" y2="20.9301" width="0" layer="19" extent="16-16"/>
-<wire x1="17.36" y1="19.7899" x2="9.335" y2="20.9301" width="0" layer="19" extent="16-16"/>
-<wire x1="17.375" y1="18.03" x2="17.36" y2="19.7899" width="0" layer="19" extent="16-16"/>
-<wire x1="22.98" y1="22.355" x2="17.36" y2="19.7899" width="0" layer="19" extent="16-16"/>
-<wire x1="14.0899" y1="9.5" x2="17.375" y2="18.03" width="0" layer="19" extent="16-16"/>
-<wire x1="12.375" y1="9.25" x2="14.0899" y2="9.5" width="0" layer="19" extent="16-16"/>
-<wire x1="15.72" y1="3.815" x2="14.0899" y2="9.5" width="0" layer="19" extent="16-16"/>
+<wire x1="22.98" y1="22.355" x2="14.6199" y2="37.69" width="0" layer="19" extent="16-16"/>
+<wire x1="16.73" y1="16.1549" x2="22.98" y2="22.355" width="0" layer="19" extent="16-16"/>
+<wire x1="16.795" y1="14.415" x2="16.73" y2="16.1549" width="0" layer="19" extent="16-16"/>
+<wire x1="13.1649" y1="9.275" x2="16.795" y2="14.415" width="0" layer="19" extent="16-16"/>
+<wire x1="11.405" y1="9.26" x2="13.1649" y2="9.275" width="0" layer="19" extent="16-16"/>
+<wire x1="15.72" y1="3.815" x2="13.1649" y2="9.275" width="0" layer="19" extent="16-16"/>
+<wire x1="9.395" y1="17.1151" x2="16.73" y2="16.1549" width="0" layer="19" extent="16-16"/>
+<wire x1="9.145" y1="18.83" x2="9.395" y2="17.1151" width="0" layer="19" extent="16-16"/>
+<wire x1="3.44" y1="17.275" x2="9.145" y2="18.83" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="GND">
 <contactref element="W2U1" pad="2"/>
@@ -3878,24 +3878,7 @@ design rules under a new name.</description>
 <contactref element="I?TVS1" pad="1"/>
 <contactref element="U3" pad="2"/>
 <contactref element="I?TVS3" pad="1"/>
-<wire x1="14.45" y1="40.325" x2="10.67" y2="43.625" width="0" layer="19" extent="16-16"/>
-<wire x1="12.78" y1="38.88" x2="14.45" y2="40.325" width="0" layer="19" extent="16-16"/>
-<wire x1="12.695" y1="35.555" x2="12.78" y2="38.88" width="0" layer="19" extent="16-16"/>
-<wire x1="8.67" y1="35.575" x2="12.695" y2="35.555" width="0" layer="19" extent="16-16"/>
-<wire x1="6.72" y1="35.65" x2="8.67" y2="35.575" width="0" layer="19" extent="16-16"/>
-<wire x1="17.2201" y1="36.74" x2="14.45" y2="40.325" width="0" layer="19" extent="16-16"/>
-<wire x1="7.57" y1="22.67" x2="8.67" y2="35.575" width="0" layer="19" extent="16-16"/>
-<wire x1="5.97" y1="20.39" x2="7.57" y2="22.67" width="0" layer="19" extent="16-16"/>
-<wire x1="8.385" y1="18.3299" x2="5.97" y2="20.39" width="0" layer="19" extent="16-16"/>
-<wire x1="3.44" y1="22.355" x2="5.97" y2="20.39" width="0" layer="19" extent="16-16"/>
-<wire x1="19.075" y1="18.03" x2="8.385" y2="18.3299" width="0" layer="19" extent="16-16"/>
-<wire x1="20.545" y1="20.9" x2="19.075" y2="18.03" width="0" layer="19" extent="16-16"/>
-<wire x1="18.31" y1="22.3901" x2="20.545" y2="20.9" width="0" layer="19" extent="16-16"/>
-<wire x1="22.98" y1="17.275" x2="19.075" y2="18.03" width="0" layer="19" extent="16-16"/>
-<wire x1="16.6901" y1="8.55" x2="19.075" y2="18.03" width="0" layer="19" extent="16-16"/>
-<wire x1="14.91" y1="6.135" x2="16.6901" y2="8.55" width="0" layer="19" extent="16-16"/>
-<wire x1="12.375" y1="7.55" x2="14.91" y2="6.135" width="0" layer="19" extent="16-16"/>
-<wire x1="10.64" y1="3.815" x2="12.375" y2="7.55" width="0" layer="19" extent="16-16"/>
+<wire x1="20.095" y1="16.695" x2="22.98" y2="17.275" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VREF">
 <contactref element="I?R3" pad="1"/>
@@ -3921,27 +3904,27 @@ design rules under a new name.</description>
 <contactref element="U3" pad="3"/>
 <contactref element="U3" pad="4"/>
 <contactref element="I?TVS3" pad="2"/>
-<wire x1="14.0899" y1="7.6" x2="3.44" y2="19.815" width="0" layer="19" extent="16-16"/>
-<wire x1="13.91" y1="6.135" x2="14.0899" y2="7.6" width="0" layer="19" extent="16-16"/>
-<wire x1="16.6901" y1="7.6" x2="14.0899" y2="7.6" width="0" layer="19" extent="16-16"/>
+<wire x1="6.03" y1="17.295" x2="3.44" y2="19.815" width="0" layer="19" extent="16-16"/>
+<wire x1="7.495" y1="17.1151" x2="6.03" y2="17.295" width="0" layer="19" extent="16-16"/>
+<wire x1="7.495" y1="14.5149" x2="7.495" y2="17.1151" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SIG_OUT2">
 <contactref element="W2BSF2" pad="SIG"/>
 <contactref element="U1" pad="3"/>
 <contactref element="U1" pad="4"/>
 <contactref element="I?TVS1" pad="2"/>
-<wire x1="19.26" y1="19.7899" x2="19.26" y2="22.3901" width="0" layer="19" extent="16-16"/>
-<wire x1="20.545" y1="19.9" x2="19.26" y2="19.7899" width="0" layer="19" extent="16-16"/>
-<wire x1="13.18" y1="3.815" x2="19.26" y2="19.7899" width="0" layer="19" extent="16-16"/>
+<wire x1="13.1649" y1="7.375" x2="15.7651" y2="7.375" width="0" layer="19" extent="16-16"/>
+<wire x1="13.275" y1="6.09" x2="13.1649" y2="7.375" width="0" layer="19" extent="16-16"/>
+<wire x1="13.18" y1="3.815" x2="13.275" y2="6.09" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SIG_OUT3">
 <contactref element="W2BSF1" pad="SIG"/>
 <contactref element="U2" pad="3"/>
 <contactref element="U2" pad="4"/>
 <contactref element="I?TVS2" pad="2"/>
-<wire x1="7.435" y1="20.9301" x2="22.98" y2="19.815" width="0" layer="19" extent="16-16"/>
-<wire x1="5.97" y1="19.39" x2="7.435" y2="20.9301" width="0" layer="19" extent="16-16"/>
-<wire x1="7.435" y1="18.3299" x2="5.97" y2="19.39" width="0" layer="19" extent="16-16"/>
+<wire x1="20.095" y1="17.695" x2="22.98" y2="19.815" width="0" layer="19" extent="16-16"/>
+<wire x1="18.63" y1="18.7551" x2="20.095" y2="17.695" width="0" layer="19" extent="16-16"/>
+<wire x1="18.63" y1="16.1549" x2="20.095" y2="17.695" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$3">
 <contactref element="W2U1" pad="1"/>

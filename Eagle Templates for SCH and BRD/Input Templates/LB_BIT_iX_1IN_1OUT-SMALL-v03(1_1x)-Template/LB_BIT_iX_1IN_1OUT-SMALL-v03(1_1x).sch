@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -64,6 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -72,6 +73,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -85,7 +87,9 @@
 <layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="LB_TEXT" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -140,6 +144,7 @@
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <schematic>
 <libraries>
@@ -465,6 +470,20 @@ trademarks of littleBits Electronics Inc.</text>
 <wire x1="-0.5" y1="-0.65" x2="0.9" y2="-0.65" width="0.2032" layer="51"/>
 <wire x1="-0.5" y1="0.65" x2="-0.5" y2="-0.65" width="0.2032" layer="51"/>
 </package>
+<package name="R0603">
+<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
+<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<text x="-0.635" y="0.635" size="1.778" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
+<wire x1="-1.7" y1="0.63" x2="-1.7" y2="-0.63" width="0.127" layer="51"/>
+<wire x1="-1.7" y1="0.66" x2="1.7" y2="0.66" width="0.127" layer="51"/>
+<wire x1="-1.7" y1="-0.66" x2="1.7" y2="-0.66" width="0.127" layer="51"/>
+<wire x1="1.7" y1="0.63" x2="1.7" y2="-0.63" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="OPAMP">
@@ -588,6 +607,19 @@ trademarks of littleBits Electronics Inc.</text>
 <wire x1="86.36" y1="12.7" x2="86.36" y2="5.08" width="0.254" layer="94"/>
 <wire x1="86.36" y1="5.08" x2="86.36" y2="25.4" width="0.254" layer="94"/>
 <wire x1="40.64" y1="25.4" x2="40.64" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="FERRITE-BEAD">
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<text x="-4.064" y="3.302" size="1.778" layer="95">&gt;Name</text>
+<text x="-4.572" y="-5.08" size="1.778" layer="96">&gt;Value</text>
+<pin name="P$1" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<pin name="P$2" x="-5.08" y="0" visible="off" length="short"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -806,6 +838,31 @@ Device conducts in avalanche mode after reaching a part dependent voltage thresh
 </gates>
 <devices>
 <device name="" package="FABDWG01-OHW">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FERRITE-BEAD">
+<gates>
+<gate name="G$1" symbol="FERRITE-BEAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0603" package="R0603">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805" package="RES-0805">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4798,43 +4855,42 @@ quarter-circle legs are 2  intervals apart</text>
 <part name="P+1" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="U1" library="LITTLEBITS" deviceset="LV321" device="SOT23-5"/>
-<part name="I?R1" library="LITTLEBITS" deviceset="RESISTOR" device="0603" value="1meg"/>
+<part name="R1" library="LITTLEBITS" deviceset="RESISTOR" device="0603" value="1meg"/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+3" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+7" library="SparkFun" deviceset="VCC" device=""/>
-<part name="I?R3" library="LITTLEBITS" deviceset="RESISTOR" device="0603" value="3K3">
+<part name="R3" library="LITTLEBITS" deviceset="RESISTOR" device="0603" value="3K3">
 <attribute name="COMPOSITION" value=""/>
 <attribute name="LB_PN" value=""/>
 <attribute name="POWER" value=""/>
 <attribute name="TOLERANCE" value=""/>
 </part>
-<part name="I?R4" library="LITTLEBITS" deviceset="RESISTOR" device="0603" value="3K3">
+<part name="R4" library="LITTLEBITS" deviceset="RESISTOR" device="0603" value="3K3">
 <attribute name="COMPOSITION" value=""/>
 <attribute name="LB_PN" value=""/>
 <attribute name="POWER" value=""/>
 <attribute name="TOLERANCE" value=""/>
 </part>
-<part name="I?BSF" library="bitSnap" deviceset="BITSNAP_V03_FEMALE" device=""/>
-<part name="I?BSM" library="bitSnap" deviceset="BITSNAP_V03_MALE" device=""/>
-<part name="P+2" library="SparkFun" deviceset="VCC" device=""/>
+<part name="BSF1" library="bitSnap" deviceset="BITSNAP_V03_FEMALE" device=""/>
+<part name="BSM1" library="bitSnap" deviceset="BITSNAP_V03_MALE" device=""/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
-<part name="I?C1" library="LITTLEBITS" deviceset="CAP" device="CAP-0603" value="0.1uF"/>
+<part name="C1" library="LITTLEBITS" deviceset="CAP" device="CAP-0603" value="0.1uF"/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
-<part name="I?TVS1" library="LITTLEBITS" deviceset="DIODE-TVS" device="SOD-923" value="ESD9B5.0ST5G"/>
+<part name="TVS1" library="LITTLEBITS" deviceset="DIODE-TVS" device="SOD-923" value="ESD9B5.0ST5G"/>
 <part name="U2" library="LITTLEBITS" deviceset="LV321" device="SOT23-5"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+5" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
-<part name="I?TVS2" library="LITTLEBITS" deviceset="DIODE-TVS" device="SOD-923" value="ESD9B5.0ST5G"/>
-<part name="I?C3" library="LITTLEBITS" deviceset="CAP" device="CAP-0603" value="1.0uF">
+<part name="TVS2" library="LITTLEBITS" deviceset="DIODE-TVS" device="SOD-923" value="ESD9B5.0ST5G"/>
+<part name="C3" library="LITTLEBITS" deviceset="CAP" device="CAP-0603" value="1.0uF">
 <attribute name="COMPOSITION" value=""/>
 <attribute name="LB_PN" value=""/>
 <attribute name="TOLERANCE" value=""/>
 <attribute name="VOLTAGE" value=""/>
 </part>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
-<part name="I?R2" library="LITTLEBITS" deviceset="RESISTOR" device="0603" value="10K">
+<part name="R2" library="LITTLEBITS" deviceset="RESISTOR" device="0603" value="10K">
 <attribute name="COMPOSITION" value=""/>
 <attribute name="LB_PN" value=""/>
 <attribute name="POWER" value=""/>
@@ -4844,7 +4900,7 @@ quarter-circle legs are 2  intervals apart</text>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+8" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
-<part name="I?C2" library="LITTLEBITS" deviceset="CAP" device="CAP-0603" value="10uF">
+<part name="C2" library="LITTLEBITS" deviceset="CAP" device="CAP-0603" value="10uF">
 <attribute name="COMPOSITION" value=""/>
 <attribute name="LB_PN" value=""/>
 <attribute name="TOLERANCE" value=""/>
@@ -4853,73 +4909,78 @@ quarter-circle legs are 2  intervals apart</text>
 <part name="U$1" library="LITTLEBITS131206" deviceset="OSHW-LOGO" device="L"/>
 <part name="U$2" library="LITTLEBITS" deviceset="OSHWCREDIT" device=""/>
 <part name="U$3" library="LITTLEBITS" deviceset="FRAME-LETTER" device=""/>
+<part name="FB1" library="LITTLEBITS" deviceset="FERRITE-BEAD" device="0603"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="15.24" y="127" size="1.778" layer="91">R1 1MEG MINIMUM.</text>
-<text x="15.24" y="124.46" size="1.778" layer="91">R1 CONNECTION DETERMINES</text>
-<text x="15.24" y="121.92" size="1.778" layer="91">BIT FUNCTIONALITY WHEN THE</text>
-<text x="15.24" y="119.38" size="1.778" layer="91">INPUT BITSNAP IS NOT CONNECTED.</text>
-<text x="15.24" y="116.84" size="1.778" layer="91">TYPICAL CONNECTION IS TO VCC OR GND.</text>
-<text x="17.78" y="55.88" size="1.778" layer="91">TVS PROVIDES ESD PROTECTION.</text>
-<text x="15.24" y="129.54" size="1.778" layer="91">TYPICAL INPUT SECTION:</text>
-<text x="106.68" y="177.8" size="1.778" layer="91">TYPICAL POWER SECTION</text>
-<text x="106.68" y="175.26" size="1.778" layer="91">IF YOU NEED A VREF:</text>
-<text x="193.04" y="55.88" size="1.778" layer="91">TVS PROVIDES ESD PROTECTION.</text>
-<text x="193.04" y="96.52" size="1.778" layer="91">TYPICAL OUTPUT SECTION:</text>
-<circle x="119.38" y="81.28" radius="48.26" width="1.27" layer="91"/>
-<text x="101.6" y="81.28" size="1.778" layer="91">PUT YOUR AWESOMENESS HERE</text>
-<text x="45.72" y="101.6" size="1.778" layer="91">BYPASS EVERY IC</text>
-<text x="180.34" y="101.6" size="1.778" layer="91">BYPASS EVERY IC</text>
+<text x="15.24" y="127" size="1.778" layer="97">R1 1MEG MINIMUM.</text>
+<text x="15.24" y="124.46" size="1.778" layer="97">R1 CONNECTION DETERMINES</text>
+<text x="15.24" y="121.92" size="1.778" layer="97">BIT FUNCTIONALITY WHEN THE</text>
+<text x="15.24" y="119.38" size="1.778" layer="97">INPUT BITSNAP IS NOT CONNECTED.</text>
+<text x="15.24" y="116.84" size="1.778" layer="97">TYPICAL CONNECTION IS TO VCC OR GND.</text>
+<text x="17.78" y="55.88" size="1.778" layer="97">TVS PROVIDES ESD PROTECTION.</text>
+<text x="15.24" y="129.54" size="1.778" layer="97">TYPICAL INPUT SECTION:</text>
+<text x="106.68" y="177.8" size="1.778" layer="97">TYPICAL POWER SECTION</text>
+<text x="106.68" y="175.26" size="1.778" layer="97">IF YOU NEED A VREF:</text>
+<text x="193.04" y="55.88" size="1.778" layer="97">TVS PROVIDES ESD PROTECTION.</text>
+<text x="193.04" y="96.52" size="1.778" layer="97">TYPICAL OUTPUT SECTION:</text>
+<circle x="119.38" y="81.28" radius="48.26" width="1.27" layer="97"/>
+<text x="101.6" y="81.28" size="1.778" layer="97">PUT YOUR AWESOMENESS HERE</text>
+<text x="45.72" y="101.6" size="1.778" layer="97">BYPASS EVERY IC</text>
+<text x="180.34" y="101.6" size="1.778" layer="97">BYPASS EVERY IC</text>
+<text x="38.1" y="172.72" size="1.778" layer="97">NO CONNECTIONS TO LB_VCC ALLOWED</text>
+<text x="38.1" y="177.8" size="1.778" layer="97">ALL COMPONENT POWER AND PASSIVES</text>
+<text x="38.1" y="175.26" size="1.778" layer="97">MUST BE CONNECTED TO VCC</text>
 </plain>
 <instances>
-<instance part="P+1" gate="1" x="30.48" y="175.26"/>
-<instance part="GND1" gate="1" x="30.48" y="157.48"/>
+<instance part="P+1" gate="1" x="50.8" y="165.1"/>
+<instance part="GND1" gate="1" x="30.48" y="147.32"/>
 <instance part="U1" gate="G$1" x="53.34" y="78.74" smashed="yes">
 <attribute name="VALUE" x="43.18" y="60.96" size="1.778" layer="96"/>
+<attribute name="NAME" x="53.34" y="83.82" size="1.778" layer="95"/>
 </instance>
-<instance part="I?R1" gate="G$1" x="20.32" y="73.66" rot="R90"/>
+<instance part="R1" gate="G$1" x="20.32" y="73.66" rot="R90"/>
 <instance part="GND2" gate="1" x="50.8" y="68.58"/>
 <instance part="P+3" gate="1" x="50.8" y="86.36"/>
 <instance part="GND8" gate="1" x="127" y="134.62"/>
 <instance part="P+7" gate="1" x="119.38" y="165.1"/>
-<instance part="I?R3" gate="G$1" x="119.38" y="157.48" rot="R90"/>
-<instance part="I?R4" gate="G$1" x="119.38" y="144.78" rot="R90"/>
-<instance part="I?BSF" gate="G$1" x="226.06" y="162.56"/>
-<instance part="I?BSM" gate="G$1" x="12.7" y="162.56"/>
-<instance part="P+2" gate="1" x="218.44" y="175.26"/>
-<instance part="GND3" gate="1" x="218.44" y="157.48"/>
-<instance part="I?C1" gate="G$1" x="43.18" y="99.06" smashed="yes">
+<instance part="R3" gate="G$1" x="119.38" y="157.48" rot="R90"/>
+<instance part="R4" gate="G$1" x="119.38" y="144.78" rot="R90"/>
+<instance part="BSF1" gate="G$1" x="226.06" y="152.4"/>
+<instance part="BSM1" gate="G$1" x="12.7" y="152.4"/>
+<instance part="GND3" gate="1" x="218.44" y="147.32"/>
+<instance part="C1" gate="G$1" x="43.18" y="99.06" smashed="yes">
 <attribute name="NAME" x="37.084" y="101.981" size="1.778" layer="95"/>
 <attribute name="VALUE" x="34.544" y="96.901" size="1.778" layer="96"/>
 </instance>
-<instance part="GND4" gate="1" x="30.48" y="66.04"/>
-<instance part="I?TVS1" gate="G$1" x="30.48" y="76.2" smashed="yes">
+<instance part="GND4" gate="1" x="30.48" y="63.5"/>
+<instance part="TVS1" gate="G$1" x="30.48" y="76.2" smashed="yes">
 <attribute name="NAME" x="27.4574" y="71.12" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="35.3314" y="68.58" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="35.3314" y="60.96" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U2" gate="G$1" x="187.96" y="78.74" smashed="yes">
 <attribute name="VALUE" x="177.8" y="60.96" size="1.778" layer="96"/>
+<attribute name="NAME" x="187.96" y="83.82" size="1.778" layer="95"/>
 </instance>
 <instance part="GND5" gate="1" x="185.42" y="68.58"/>
 <instance part="P+5" gate="1" x="185.42" y="86.36"/>
 <instance part="GND6" gate="1" x="205.74" y="66.04"/>
-<instance part="I?TVS2" gate="G$1" x="205.74" y="73.66" smashed="yes">
+<instance part="TVS2" gate="G$1" x="205.74" y="73.66" smashed="yes">
 <attribute name="NAME" x="202.7174" y="68.58" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="210.5914" y="66.04" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="I?C3" gate="G$1" x="177.8" y="101.6" smashed="yes" rot="R180">
-<attribute name="NAME" x="176.276" y="98.679" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="176.276" y="103.759" size="1.778" layer="96" rot="R180"/>
+<instance part="C3" gate="G$1" x="177.8" y="101.6" smashed="yes" rot="R180">
+<attribute name="NAME" x="176.276" y="103.759" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="176.276" y="98.679" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND7" gate="1" x="177.8" y="91.44"/>
-<instance part="I?R2" gate="G$1" x="38.1" y="81.28" rot="R180"/>
+<instance part="R2" gate="G$1" x="38.1" y="81.28" rot="R180"/>
 <instance part="P+6" gate="1" x="43.18" y="106.68"/>
 <instance part="GND9" gate="1" x="43.18" y="91.44"/>
 <instance part="P+8" gate="1" x="177.8" y="106.68"/>
 <instance part="GND10" gate="1" x="20.32" y="63.5"/>
-<instance part="I?C2" gate="G$1" x="127" y="142.24" smashed="yes">
+<instance part="C2" gate="G$1" x="127" y="142.24" smashed="yes">
 <attribute name="NAME" x="128.524" y="145.161" size="1.778" layer="95"/>
 <attribute name="VALUE" x="128.524" y="140.081" size="1.778" layer="96"/>
 </instance>
@@ -4927,6 +4988,7 @@ quarter-circle legs are 2  intervals apart</text>
 <instance part="U$2" gate="G$1" x="38.1" y="10.16"/>
 <instance part="U$3" gate="G$1" x="0" y="0"/>
 <instance part="U$3" gate="G$2" x="147.32" y="0"/>
+<instance part="FB1" gate="G$1" x="40.64" y="165.1"/>
 </instances>
 <busses>
 </busses>
@@ -4938,20 +5000,8 @@ quarter-circle legs are 2  intervals apart</text>
 </segment>
 <segment>
 <pinref part="P+7" gate="1" pin="VCC"/>
-<pinref part="I?R3" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="162.56" x2="119.38" y2="165.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="I?BSM" gate="G$1" pin="VCC"/>
-<pinref part="P+1" gate="1" pin="VCC"/>
-<wire x1="25.4" y1="170.18" x2="30.48" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="170.18" x2="30.48" y2="175.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="I?BSF" gate="G$1" pin="VCC"/>
-<pinref part="P+2" gate="1" pin="VCC"/>
-<wire x1="223.52" y1="170.18" x2="218.44" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="170.18" x2="218.44" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="V+"/>
@@ -4959,13 +5009,18 @@ quarter-circle legs are 2  intervals apart</text>
 </segment>
 <segment>
 <pinref part="P+6" gate="1" pin="VCC"/>
-<pinref part="I?C1" gate="G$1" pin="1"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="106.68" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+8" gate="1" pin="VCC"/>
-<pinref part="I?C3" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="106.68" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="FB1" gate="G$1" pin="P$1"/>
+<pinref part="P+1" gate="1" pin="VCC"/>
+<wire x1="45.72" y1="165.1" x2="50.8" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -4974,59 +5029,59 @@ quarter-circle legs are 2  intervals apart</text>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="I?R4" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="127" y1="137.16" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="137.16" x2="119.38" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="127" y1="137.16" x2="127" y2="139.7" width="0.1524" layer="91"/>
 <junction x="127" y="137.16"/>
-<pinref part="I?C2" gate="G$1" pin="2"/>
+<pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="I?BSM" gate="G$1" pin="GND"/>
+<pinref part="BSM1" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="25.4" y1="165.1" x2="30.48" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="165.1" x2="30.48" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="154.94" x2="30.48" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="154.94" x2="30.48" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="I?BSF" gate="G$1" pin="GND"/>
+<pinref part="BSF1" gate="G$1" pin="GND"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="223.52" y1="165.1" x2="218.44" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="165.1" x2="218.44" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="154.94" x2="218.44" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="154.94" x2="218.44" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="I?TVS1" gate="G$1" pin="A"/>
-<wire x1="30.48" y1="71.12" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="TVS1" gate="G$1" pin="A"/>
+<wire x1="30.48" y1="71.12" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="V-"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="I?TVS2" gate="G$1" pin="A"/>
+<pinref part="TVS2" gate="G$1" pin="A"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="I?C3" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="96.52" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="I?C1" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="43.18" y1="96.52" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="I?R1" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="20.32" y1="68.58" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VREF" class="0">
 <segment>
-<pinref part="I?R3" gate="G$1" pin="1"/>
-<pinref part="I?R4" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="149.86" x2="119.38" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="149.86" x2="127" y2="149.86" width="0.1524" layer="91"/>
 <junction x="119.38" y="149.86"/>
@@ -5034,14 +5089,14 @@ quarter-circle legs are 2  intervals apart</text>
 <wire x1="127" y1="149.86" x2="134.62" y2="149.86" width="0.1524" layer="91"/>
 <label x="134.62" y="149.86" size="1.778" layer="95" xref="yes"/>
 <junction x="127" y="149.86"/>
-<pinref part="I?C2" gate="G$1" pin="1"/>
+<pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SIG_OUT" class="0">
 <segment>
-<pinref part="I?BSF" gate="G$1" pin="SIG"/>
-<wire x1="223.52" y1="167.64" x2="218.44" y2="167.64" width="0.1524" layer="91"/>
-<label x="218.44" y="167.64" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="BSF1" gate="G$1" pin="SIG"/>
+<wire x1="223.52" y1="157.48" x2="218.44" y2="157.48" width="0.1524" layer="91"/>
+<label x="218.44" y="157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 <label x="220.98" y="78.74" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
@@ -5052,7 +5107,7 @@ quarter-circle legs are 2  intervals apart</text>
 <wire x1="195.58" y1="63.5" x2="195.58" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="78.74" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
 <junction x="195.58" y="78.74"/>
-<pinref part="I?TVS2" gate="G$1" pin="C"/>
+<pinref part="TVS2" gate="G$1" pin="C"/>
 <wire x1="205.74" y1="76.2" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="78.74" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
 <junction x="205.74" y="78.74"/>
@@ -5071,21 +5126,20 @@ quarter-circle legs are 2  intervals apart</text>
 </net>
 <net name="SIG_IN" class="0">
 <segment>
-<pinref part="I?BSM" gate="G$1" pin="SIG"/>
-<wire x1="25.4" y1="167.64" x2="30.48" y2="167.64" width="0.1524" layer="91"/>
-<label x="30.48" y="167.64" size="1.778" layer="95" xref="yes"/>
+<pinref part="BSM1" gate="G$1" pin="SIG"/>
+<wire x1="25.4" y1="157.48" x2="30.48" y2="157.48" width="0.1524" layer="91"/>
+<label x="30.48" y="157.48" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <label x="15.24" y="81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="25.4" y1="81.28" x2="30.48" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="81.28" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="81.28" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="81.28" x2="25.4" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="I?R2" gate="G$1" pin="2"/>
-<pinref part="I?TVS1" gate="G$1" pin="C"/>
+<wire x1="20.32" y1="81.28" x2="30.48" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="TVS1" gate="G$1" pin="C"/>
 <wire x1="30.48" y1="78.74" x2="30.48" y2="81.28" width="0.1524" layer="91"/>
 <junction x="30.48" y="81.28"/>
-<pinref part="I?R1" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="78.74" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
 <junction x="20.32" y="81.28"/>
 </segment>
@@ -5099,8 +5153,24 @@ quarter-circle legs are 2  intervals apart</text>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="+IN"/>
-<pinref part="I?R2" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="81.28" x2="45.72" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LB_VCC" class="0">
+<segment>
+<pinref part="BSF1" gate="G$1" pin="VCC"/>
+<wire x1="223.52" y1="160.02" x2="218.44" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="160.02" x2="218.44" y2="165.1" width="0.1524" layer="91"/>
+<label x="218.44" y="165.1" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="BSM1" gate="G$1" pin="VCC"/>
+<wire x1="25.4" y1="160.02" x2="30.48" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="FB1" gate="G$1" pin="P$2"/>
+<wire x1="30.48" y1="160.02" x2="30.48" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="165.1" x2="35.56" y2="165.1" width="0.1524" layer="91"/>
+<label x="30.48" y="165.1" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>

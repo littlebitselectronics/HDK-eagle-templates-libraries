@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4634,8 +4634,8 @@ trademarks of littleBits Electronics Inc.</text>
 <sheets>
 <sheet>
 <plain>
-<circle x="119.38" y="81.28" radius="48.26" width="1.27" layer="91"/>
-<text x="101.6" y="81.28" size="1.778" layer="91">PUT YOUR AWESOMENESS HERE</text>
+<circle x="119.38" y="81.28" radius="48.26" width="1.27" layer="97"/>
+<text x="101.6" y="81.28" size="1.778" layer="97">PUT YOUR AWESOMENESS HERE</text>
 </plain>
 <instances>
 <instance part="W1JP2" gate="G$1" x="208.28" y="86.36" rot="MR0"/>
